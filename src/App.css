@@ -1,5 +1,20 @@
 /************ Custom Font ************/
 @font-face {
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Tangerine', "cursive";
+  font-weight: 700;
+}
+/* 
+@font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
 	font-weight: 700;
@@ -13,7 +28,7 @@
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
-}
+} */
 
 /************ Default Css ************/
 * {
@@ -33,7 +48,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,6 +117,7 @@ nav.navbar .navbar-nav .nav-link.nav-item{
 
 }
 nav.navbar .navbar-nav .nav-link.navbar-link  {
+  font-family: 'Tangerine', "cursive"; 
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
@@ -155,6 +171,7 @@ span.navbar-text {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
+  
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
@@ -254,6 +271,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
+  font-family: 'Nanum Myeongjo', serif;
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -262,7 +280,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  font-family: 'Poppins', sans-serif;;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -310,7 +329,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .company-bx {
-  background: #262627;
+  background: #ffffff;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -321,7 +340,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .company p {
-    color: #B8B8B8;
+    text-decoration-color: #262627;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
