@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import blueLogo from '../assets/img/Oytie-Blue.png';
 import logo from '../assets/img/Oytie.png';
 import { HashLink } from 'react-router-hash-link';
 import {
@@ -16,6 +17,7 @@ export const NavBar = () => {
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
+       
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -51,7 +53,7 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
+                <button className="fs-5  vvd"><span>Let’s Connect</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
