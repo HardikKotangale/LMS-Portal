@@ -1,0 +1,68 @@
+#PortalBodyMain{
+    background-color: white;
+    border-radius: 2%;
+    text-align: center;
+    width: 95%; 
+}
+.NavrBarMain{
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0%;
+    margin: 0%;
+    border-radius: 5%;
+  /*
+    padding-left: 0%;
+    padding-right: -10px; */
+
+}
+#activeNav{
+  color:#1434A4;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.ProfileBody h3{
+  text-align: left;
+  color: #0a1e7d;
+  font-size: 4vh;
+  font-weight: bold;
+  display: inline;
+  float: left;
+  margin-left: 3vh;
+}
+
+.ProfileBody label,input{
+  float: left;
+}
+.ProfileBody label{
+  margin-left: 2vh;
+  height: 2vh;
+}
+.ProfileBody input{
+  border-radius: 25px;
+  border: 1px solid #D8D8D8;
+  background-color: #D8D8D8;
+}
+#perInfo{
+  background-color: #F0F0F0;
+  border-radius: 10px;
+}
+#line{
+  margin: 4vh;
+  width: 97%;
+  float:center;
+}
+#PorBody{
+  height: 80vh;
+  overflow-y:scroll;
+}
+#PorBody Button{
+  float: left;
+  color: white;
+  background-color: #0a1e7d;
+}
+#PorBody Button:hover{
+  background-color:  white;
+  color: #0a1e7d;
+  border: 1px solid #0a1e7d;
+
+}

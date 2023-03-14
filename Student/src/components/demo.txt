@@ -1,0 +1,228 @@
+
+  constructor(props){
+    super(props);
+    this.state ={
+      id: '',
+      fname :'',
+      mname :'',
+      lname :'',
+      email :'',
+      profile :'',
+      dob :'',
+      age :'',
+      gender :'',
+      address :'',
+      city :'',
+      zipcode :'',
+      state :'',
+      mob1 :'',
+      mob2:''
+    }
+    this.getMname = this.getMname.bind(this);
+    this.getEmail = this.getEmail.bind(this);
+    this.getProfile = this.getProfile.bind(this);
+    this.getDob = this.getDob.bind(this);
+    this.getAge = this.getAge.bind(this);
+    this.getGender = this.getGender.bind(this);
+    this.getAddress = this.getAddress.bind(this);
+    this.getCity = this.getCity.bind(this);
+    this.getState = this.getState.bind(this);
+    this.getZipcode = this.getZipcode.bind(this);
+    this.getMob1 = this.getMob1.bind(this);
+    this.getMob2 = this.getMob2.bind(this);
+  }
+  getMname(event){
+    this.setState({mname:event.target.value});
+  }
+  getEmail(event){
+    this.setState({email: event.target.value});
+  }
+  getProfile(event){
+    this.setState({profile : event.target.value});
+  }
+  getDob(event){
+    this.setState({dob : event.target.value});
+  }
+  getAge(event){
+    this.setState({age: event.target.value});
+  }
+  getGender(event){
+    this.setState({gender: event.target.value});
+  }
+  getAddress(event){
+    this.setState({address: event.target.value});
+  }
+  getCity(event){
+    this.setState({city: event.target.value});
+  }
+  getState(event){
+    this.setState({state: event.target.value});
+  }
+  getZipcode(event){
+    this.setState({zipcode: event.target.value});
+  }
+  getMob1(event){
+    this.setState({mob1: event.target.value});
+  }
+  getMob2(event){
+    this.setState({mob2: event.target.value});
+  }
+  handleOnSubmit(){
+    console.log({this:getState});
+    
+  }
+
+
+
+
+
+
+   <div id='PorBody' className='ProfileBody container-xxl mt-4'>
+          <div className='pt-2 pb-4'>
+
+
+            <div className='row py-3'>
+              <div className='col-4'>
+                <h3>Personal Information</h3>
+                <BsFillPencilFill style={{
+                  color: '#0a1e7d',
+                  float: 'left',
+                  marginLeft: '2vh'
+                }} size="30px" />
+              </div>
+
+              <div className='col-8'></div>
+            </div>
+            {/* <Formik
+              initialValues={{
+                mname: ''
+              }}
+              validationSchema={validationSchema}
+              onSubmit={values => {
+                console.log(values);
+                localStorage.setItem(values);
+              }}
+            >
+              {({ handleChange, values }) => ( */}
+                <Form>
+                  <div className='row container-xl mx-auto py-3' id="perInfo">
+                    <div className='py-3 my-3'>
+                      <div className='row container-md mx-auto form-group'>
+                        <div className='col-3'>
+                          <label htmlFor='id'>Id</label><br />
+                          <input type="text" className='form-control' value={id} name="id" id="id" />
+                        </div>
+                        <div className='col-3'>
+                          <label htmlFor='fname'>First Name</label><br />
+                          <input type="text" className='form-control' value={fname} name="fname" id="fname" />
+                        </div>
+                        <div className='col-3'>
+                          <label htmlFor='mname'>Middle Name</label><br />
+                          <input type="text" className='form-control' name="mname" id="mname" /*onChange={handleChange} value={values.mname}*/ />
+                        </div>
+                        <div className='col-3'>
+                          <label htmlFor='lname'>Last Name</label><br />
+                          <input type="text" className='form-control' value={lname} name="lname" id="lname" />
+                        </div>
+                      </div>
+
+                      <hr id='line' />
+                      <div className='row container-md mx-auto py-3 form-group'>
+                        <div className='col-3'>
+                          <label htmlFor='email'>Email</label><br />
+                          <input type="email" className='form-control' value={email} name='email' id="email" />
+                        </div>
+
+                        <div className='col-3'>
+                          <label htmlFor='profile'>Profile Photo</label><br />
+                          <input type="file" className='form-control' name="profile" ref="imageInput" accept="image/png, image/jpeg" id="profile" multiple={false} />
+                        </div>
+                        <div className='col-6'>
+
+                        </div>
+                      </div>
+
+                      <hr id='line' />
+                      <div className='row container-md mx-auto py-3 form-group'>
+                        <div className='col-3'>
+                          <label htmlFor='dob'>Date of Birth</label><br />
+                          <input type="date" className='form-control' name='dob' id='dob' />
+                        </div>
+                        <div className='col-3'>
+                          <label htmlFor='age'>Age</label><br />
+                          <input type="number" min={1} max={100} className='form-control' name='age' id='age' />
+                        </div>
+                        <div className='col-3'>
+                          <label htmlFor='gender'>Gender</label><br />
+                          <input type="text" className='form-control' name='gender' id='gender' accept='Male,Female,male,female' />
+                        </div>
+                        <div className='col-3'>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='row py-3 mt-3'>
+                    <div className='col-4'>
+                      <h3>Contact Information</h3>
+                      <BsFillPencilFill style={{
+                        color: '#0a1e7d',
+                        float: 'left',
+                        marginLeft: '2vh'
+                      }} size="30px" />
+                    </div>
+
+                    <div className='col-8'></div>
+                  </div>
+
+                  <div className='row container-xl py-3 mx-auto' id="perInfo">
+                    <div className='py-3 my-3'>
+                      <div className='row container-md mx-auto form-group'>
+                        <div className='col-2'>
+                          <label htmlFor='address'>Address</label><br />
+                          <input type="text" className='form-control' id='address' name="address" />
+                        </div>
+                        <div className='col-2'>
+                          <label htmlFor='city'>City</label><br />
+                          <input type='text' className='form-control' id='city' name='city' />
+                        </div>
+                        <div className='col-3'>
+                          <label htmlFor='zipcode'>Zipcode</label><br />
+                          <input type="number" className='form-control' id='zipcode' name='zipcode' />
+                        </div>
+                        <div className='col-3'>
+                          <label htmlFor='state'>State</label><br />
+                          <input type="text" className='form-control' id='state' name='state' />
+                        </div>
+                      </div>
+
+                      <hr id='line' />
+                      <div className='row container-md py-3 mx-auto form-group'>
+                        <div className='col-3'>
+                          <label htmlFor='mob1'>Mobile No</label><br />
+                          <input type="tel" className='form-control' value={mob} disable id='mob1' name='mob1' />
+                        </div>
+                        <div className='col-3'>
+                          <label htmlFor='mob2'>Parents Mobile No</label><br />
+                          <input type="tel" className='form-control' id='mob2' name='mob2' />
+                        </div>
+                        <div className='col-6'></div>
+                      </div>
+                      <div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div style={{ margin: '4vh', paddingBottom: '4vh' }}>
+                    <Button variant="primary" className='col-sm-2' type="submit">
+                      Submit
+                    </Button>
+                  </div>
+                </Form>
+              {/* )}
+            </Formik> */}
+          </div>
+
+        </div>

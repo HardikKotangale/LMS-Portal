@@ -1,0 +1,78 @@
+.Header{
+    background-color: #0a1e7d;  
+
+}
+.Logo{
+   
+    padding: 0%;
+    margin-left: 5%;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .zoom {
+
+    overflow: hidden;
+    transition: transform 0.25s;
+  }
+
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+
+  .insta.zoom:hover{
+    color: #e11d74;
+  }
+
+  .Footer{
+    background-color: #0a1e7d;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom:0%;
+    color:white
+}
+
+.mapFooter{
+  background-color: #0a1e7d;
+}
+
+.handlesFooter{
+  background-color: #0a1e7d;
+  
+}
+.contactFooter{
+  background-color: #0a1e7d;
+
+}
+
+
+
+.Container{
+  padding: 0%;
+  margin-left: 5%;
+}
+
