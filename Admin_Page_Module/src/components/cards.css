@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+h1,h2,p,h3,h4,label{
+  font-family: 'Poppins',sans-serif;
+}
+
+.card{
+    height: 238px;
+}
+
+.card-body{
+    background-color: #262627;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid ;
+    border-radius: 10px;
+}
+.row{
+    margin:0px 45px;
+    margin-top: 13%;
+    margin-bottom: 10;
+  }
+
+.width{
+    width: 355px;
+}
+
+label{
+    color: #FFFFFF
+  }
+
+.btn{
+    font-family: 'Poppins',sans-serif;
+    margin: 10px;
+}
+
+.btnc{
+    margin: 10px;  
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #262627;
+    background-color: #FFFFFF;
+    color: #262627;
+    padding: 11px 28px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+
+.default{
+    border-color: #FFFFFF;
+    color:#FFFFFF;
+    background-color: #262627;
+  }
+
+  .default:hover{
+    background-color: #FFFFFF;
+    color:#262627 ;
+  }
+  

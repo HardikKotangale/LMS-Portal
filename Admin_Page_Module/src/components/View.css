@@ -1,0 +1,85 @@
+
+h1,h2,p,h3,h4,label{
+    font-family: 'Poppins',sans-serif;
+    color: #FFFFFF;
+  }
+
+  
+.styled-table {
+    border-collapse: collapse;
+    margin-top: 100px;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #262627;
+    color :#FFFFFF;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #FFFFFF;
+
+}
+
+.styled-table tbody tr:nth-of-type(even) { 
+    background-color: #FFFFFF;
+}
+
+.styled-table tbody tr:nth-of-type(odd) { 
+    background-color: #bebec3;
+    
+    ;
+}
+ 
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #262627;
+}
+
+.btn {
+    border: none;
+    color: #FFFFFF;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+.btnv:hover{
+    color: #262627;
+}
+
+.btnv-edit{
+    background-color: #008cba;
+}
+
+.btnv-delete {
+    background-color: #f44336;
+}
+
+.dropdown{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 43px;
+}
+
+.inputField{
+    border-radius: 5px;
+    height: 45px;
+    padding: 10px;
+}

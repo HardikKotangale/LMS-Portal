@@ -1,0 +1,100 @@
+h1,h2,p,h3,h4,label{
+    font-family: 'Poppins',sans-serif;
+  }
+
+.form-head{
+  color: #FFFFFF;
+  font-family: 'Poppins',sans-serif;
+}
+.head{
+    color: #FFFFFF;
+}
+
+/* .newadmiss,.addCourse{
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a1e7d;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 775px;
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-top: 81px;
+    border-radius: 10px;
+} */
+
+label{
+    color: #FFFFFF
+}
+.btn{
+    background-color: #262627;
+}
+.btnc{
+    margin: 10px;  
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #262627;
+    background-color: #FFFFFF;
+    color: #262627;
+    padding: 11px 28px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.default{
+    border-color: #FFFFFF;
+    color:#FFFFFF;
+    background-color: #262627;
+  }
+
+.default:hover{
+    background-color: #FFFFFF;
+    color:#262627 ;
+  }
+
+
+
+
+  /*******************************************/
+
+  .wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;    
+  }
+  
+  .wrapper h1{
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .wrapper p{
+    text-align: center;
+    margin-top: 7px;
+    font-weight: bold;
+  }
+  
+  .wrapper .main{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .wrapper .form-container{
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+    height: 520px;
+    background-color: #262627;
+    margin: 20px auto;
+    padding: 20px;   
+  }
+
+  .inputField{
+    width:40% ;
+    padding: 1px;
+    margin: 5px;
+    border: none;
+    font-size: 17px;
+
+  }
+/* .header{
+  background-color: aqua;
+  } */
