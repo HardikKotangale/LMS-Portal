@@ -1,0 +1,113 @@
+#PortalBodyMain{
+    background-color: white;
+    border-radius: 2%;
+    text-align: center;
+    width: 95%; 
+}
+.NavrBarMain{
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0%;
+    margin: 0%;
+    border-radius: 5%;
+  /*
+    padding-left: 0%;
+    padding-right: -10px; */
+
+}
+#activeNav{
+  color:#1434A4;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.ProfileBody h3{
+  text-align: left;
+  color: #0a1e7d;
+  font-size: 4vh;
+  font-weight: bold;
+  display: inline;
+  float: left;
+  margin-left: 3vh;
+}
+
+.ProfileBody label,input{
+  float: left;
+}
+.ProfileBody label{
+  margin-left: 2vh;
+  height: 2vh;
+}
+.ProfileBody input{
+  border-radius: 25px;
+  border: 1px solid #D8D8D8;
+  background-color: #D8D8D8;
+}
+#perInfo{
+  background-color: #F0F0F0;
+  border-radius: 10px;
+}
+#line{
+  margin: 4vh;
+  width: 97%;
+  float:center;
+}
+#PorBody{
+  height: 80vh;
+  overflow-y:scroll;
+}
+#PorBody Button{
+  float: left;
+  color: white;
+  background-color: #0a1e7d;
+}
+#PorBody Button:hover{
+  background-color:  white;
+  color: #0a1e7d;
+  border: 1px solid #0a1e7d;
+
+}
+label{
+  color: black;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin-top: 100px;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #262627;
+  color :#FFFFFF;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #FFFFFF;
+
+}
+
+.styled-table tbody tr:nth-of-type(even) { 
+  background-color: #FFFFFF;
+}
+
+.styled-table tbody tr:nth-of-type(odd) { 
+  background-color: #bebec3;
+  
+  ;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #262627;
+}
